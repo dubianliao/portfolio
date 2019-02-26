@@ -6,4 +6,68 @@
 　　margin-bottom: 1.25rem;
 }
 
+
+/*============= C O N T E N T ================*/
+
+#content div.top{
+    text-align: center;
+}
+#content div.top p{
+    font-size:12px;
+}
+#content div.top h1{
+    padding:200px 0 0 0 ;
+    font-size:3rem;
+}
+#content div.top .circle-wrap{
+    margin:0 auto;
+    width:40%;
+    padding:80px 0 40px 0;
+}
+#content div.top .circle-wrap .circle{
+    display: inline-block;
+    border:solid 1px black;
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    vertical-align: top;
+    margin: 0 10px;
+}
+#content div.top .circle-wrap .circle p{
+    padding-top: 20px;
+    font-size: 10px;
+}
+#content div.top .circle-wrap .circle p.third-circle{
+    padding-top: 25px;
+}
+#content div.top p.contact-link{
+    padding-top:30px;
+}
+
+#content div.works{
+    display: block;
+    text-align: left;
+    padding:50px 0 20px 100px;
+}
+#content div.works h2{
+}
+#content div.works.select{
+    padding:50px 0;
+}
+#content div.works .select .btn{
+    display: inline-block;
+    border:solid 1px black;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    text-align: center;
+    float: left;
+}
+#content div.works .select .next{
+    margin-left: 30px;
+}
+
+
+
+
 }
