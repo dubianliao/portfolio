@@ -50,9 +50,9 @@
     padding:50px 0 20px 100px;
 }
 #content div.works h2{
+    padding-bottom:20px;
 }
 #content div.works.select{
-    padding:50px 0;
 }
 #content div.works .select .btn{
     display: inline-block;
@@ -60,15 +60,17 @@
     border-radius: 50%;
     height:50px;
     width:50px;
+    line-height: 50px;
     text-align: center;
     float: left;
 }
 #content div.works .select .next{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 #content div.swiper-container{
-    background-color: skyblue;
+    margin-top:80px;
+    width:100%;
     height:400px;
     box-sizing: border-box;
 }
@@ -82,11 +84,29 @@
 #content div.swiper-container .swiper-slide:nth-child(odd){
     padding-top: 60px;
 }
-
+#content div.swiper-container .swiper-button-prev{
+    display: none;
+}
+#content div.swiper-container .swiper-button-next{
+    display: none;
+}
 #content div.swiper-container .img-wrap{
     margin: 0 auto;
-    background-color: orange;
     height:200px;
+}
+#content div.swiper-container .img-wrap{
+    overflow: hidden;
+    position: relative;
+}
+#content div.swiper-container img{
+    width:100%;
+}
+#content div.swiper-container .swiper-slide .img-cover{
+    background-color: rgba(1,1,1,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
 }
 #content div.swiper-container .subject{
     background-color: white;
@@ -96,4 +116,7 @@
     width:80%;
     height:60px;
     line-height: 60px;
+    z-index: 100;
+    position: relative;
 }
+
