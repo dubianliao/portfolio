@@ -32,10 +32,10 @@ $(function(){
 });//全体の閉じタグ
 
 var mySwiper = new Swiper ('.swiper-container', {
-    loop: true,
+    loop: false,
     slidesPerView: 4,
     spaceBetween: 20,
-    centeredSlides : true,
+    centeredSlides : false,
     //pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
