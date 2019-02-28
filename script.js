@@ -24,13 +24,23 @@ $(function(){
             $(this).find('.img-cover').fadeIn();
         });
 
-    //categoly selection 
+    //button hover action
+    $('.circle-wrap .circle').hover(
+        function(){
+            $(this).css('color','white');
+            $(this).css('backgroundColor','gray');
+        },
+        function(){
+            $(this).css('color','');
+            $(this).css('backgroundColor','');
+        });
 
 
 
 
 });//全体の閉じタグ
 
+//swiper plug in
 var mySwiper = new Swiper ('.swiper-container', {
     loop: false,
     slidesPerView: 4,
@@ -47,3 +57,19 @@ var mySwiper = new Swiper ('.swiper-container', {
         }
     }
 })
+
+//top logo background imge
+$(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 300) + 40;
+    traY = ((4 * mouseY) / 300) + 50;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+});

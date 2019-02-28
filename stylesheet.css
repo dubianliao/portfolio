@@ -10,7 +10,7 @@
 /*============= C O N T E N T ================*/
 
 #content{
-    background: linear-gradient(15deg, #6cb8ff, #d7f9ff, #8cc4ff);
+    background: linear-gradient(-225deg,white, #ffecd2,white);
     background-size: 600% 600%;
     animation: AnimationName 20s ease infinite;
 }
@@ -26,14 +26,36 @@
 #content div.top p{
     font-size:12px;
 }
-#content div.top h1{
-    padding:200px 0 0 0 ;
-    font-size:3rem;
+
+/*====*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+
+
+.container {
 }
+
+.title {
+    padding-top: 140px;
+    padding-bottom: 20px;
+    font-weight: 800;
+    color: transparent;
+    font-size: 120px;
+    /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
+    background: url("public/normal.jpg") repeat;
+    background-position: 40% 100%;
+    -webkit-background-clip: text;
+    position: relative;
+    text-align: center;
+    line-height: 90px;
+    letter-spacing: -8px;
+}
+
+/*====*/
+
 #content div.top .circle-wrap{
     margin:0 auto;
     width:40%;
-    padding:80px 0 40px 0;
+    padding:40px 0 40px 0;
 }
 #content div.top .circle-wrap .circle{
     display: inline-block;
@@ -45,18 +67,27 @@
     margin: 0 10px;
     position: relative;
 }
-#content div.top .circle-wrap .circle:before,
-#content div.top .circle-wrap .circle:after{
-    content:"";
-    position: absolute;
-    top:-1px;
-    left:-1px;
-    width:102px;
-    height:102px;
-    border-radius: 50%;
-    z-index:-10;
-    background: linear-gradient(45deg, #6cb8ff, #fff66c, #ffa36c);
+
+
+#button {
+  cursor: pointer;
 }
+
+#button:hover {
+    /*color:white;
+    background-color: #FF1361;*/
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+
 #content div.top .circle-wrap .circle p{
     padding-top: 20px;
     font-size: 10px;
