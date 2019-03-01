@@ -12,7 +12,7 @@ body{
 /*============= C O N T E N T ================*/
 
 #content{
-    background: linear-gradient(-225deg,skyblue,white,skyblue);
+    background: linear-gradient(-225deg,#FFF800,#44107A,#FFF800);
     background-size: 600% 600%;
     animation: AnimationName 20s ease infinite;
 }
@@ -44,7 +44,7 @@ body{
     color: transparent;
     font-size: 200px;
     /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
-    background: url("public/normal.jpg") repeat;
+    background: url("public/sunrise-1756274_1920.jpg") repeat;
     background-position: 40% 100%;
     -webkit-background-clip: text;
     position: relative;
@@ -75,13 +75,15 @@ body{
 }
 
 
-#button {
+#content div.top .circle-wrap .circle{
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-#button:hover {
+#content div.top .circle-wrap .circle:hover {
     /*color:white;
     background-color: #FF1361;*/
+    transform: translateY(10px);
 }
 
 @keyframes gradient {
@@ -124,6 +126,15 @@ body{
     line-height: 50px;
     text-align: center;
     float: left;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#content div.works .select .next:hover{
+    transform: translateX(10px);
+}
+#content div.works .select .prev:hover{
+    transform: translateX(-10px);
 }
 #content div.works .select .next{
     margin-left: 10px;
@@ -180,3 +191,52 @@ body{
     position: relative;
 }
 
+#content-second{
+    background-image: url("public/TOASH0I9A3698_TP_V.jpg");
+    width: 100%;
+}
+
+#content-second h2.title {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-weight: 800;
+    color: transparent;
+    font-size: 100px;
+    /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
+    background: url("public/TOASH0I9A3698_TP_V.jpg") repeat;
+    -webkit-background-clip: text;
+    background-position: top;
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: -8px;
+    box-sizing: border-box;
+}
+#content-second p {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    padding-bottom: 50px;
+    transition: all 0.3s ease-in-out;
+}
+#content-second p:hover{
+    color:white;
+}
+#content-second div.link-wrap{
+    display: table;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.5);
+    font-size: 40px;
+    padding-bottom: 60px;
+    border-spacing: 20px 0;
+}
+#content-second div.link{
+    display: table-cell;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border:solid rgba(255,255,255,0.5) 1px;
+    text-align: center;
+    line-height: 60px;
+}

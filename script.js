@@ -22,16 +22,14 @@ $(function(){
             $(this).find('.img-cover').fadeIn();
         });
 
-    //button hover action
-    $('.circle-wrap .circle').hover(
+    $('.contact-link').hover(
         function(){
-            $(this).css('color','white');
-            $(this).css('backgroundColor','gray');
+            $('.righticon').css({transform: 'translateX(10px)'});
         },
         function(){
-            $(this).css('color','');
-            $(this).css('backgroundColor','');
+
         });
+
 
 });//全体の閉じタグ
 
