@@ -3,8 +3,6 @@
 
 
 
-
-
 $(function(){
 
     //swiper navigation btn
@@ -35,10 +33,9 @@ $(function(){
             $(this).css('backgroundColor','');
         });
 
-
-
-
 });//全体の閉じタグ
+
+
 
 //swiper plug in
 var mySwiper = new Swiper ('.swiper-container', {
@@ -73,3 +70,4 @@ $(document).ready(function(){
     $(".title").css({"background-position": traX + "%" + traY + "%"});
   });
 });
+
