@@ -21,14 +21,18 @@ $(function(){
         function(){
             $(this).find('.img-cover').fadeIn();
         });
+    //hover CONTACT US > action
+    $('.contact-link').hover(function(){
+        $(this).animate({'paddingLeft':'10px'},300);
+        $(this).find('.righticon').
+        animate({'paddingLeft':'10px'},300);
+    },
+    function(){
+        $(this).animate({'paddingLeft':''},300);
+        $(this).find('.righticon').
+        animate({'paddingLeft':''},300);
+    });
 
-    $('.contact-link').hover(
-        function(){
-            $('.righticon').css({transform: 'translateX(10px)'});
-        },
-        function(){
-
-        });
 
 
 });//全体の閉じタグ
@@ -54,6 +58,7 @@ var mySwiper = new Swiper ('.swiper-container', {
 })
 
 //top logo background imge
+
 $(document).ready(function(){
   var mouseX, mouseY;
   var ww = $( window ).width();
