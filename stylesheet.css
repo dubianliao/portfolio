@@ -26,7 +26,8 @@ body {
 /*============= C O N T E N T ================*/
 
 #content{
-    background: linear-gradient(-225deg,#FFF800,#44107A,#FFF800);
+    /*background: linear-gradient(-225deg,#FFF800,#44107A,#FFF800);*/
+    background: linear-gradient(-225deg,#FFF800,#7cc68e,#4e8ec6);
     background-size: 600% 600%;
     animation: AnimationName 20s ease infinite;
 }
@@ -60,8 +61,8 @@ body {
     color: transparent;
     font-size: 180px;
     /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
-    /*background: url("public/aizome2.png") repeat;*/
-    background: url("public/sunrise-1756274_1920.jpg") repeat;
+    background: url("public/shizu2.jpg") repeat;
+    /*background: url("public/sunrise-1756274_1920.jpg") repeat;*/
     background-position: 40% 100%;
     opacity: 0.0;
     -webkit-background-clip: text;
@@ -190,25 +191,29 @@ body {
     height:200px;
     cursor: pointer;
 }
-#content div.swiper-container .img-wrap{
+/*#content div.swiper-container .img-wrap{
     overflow: hidden;
     position: relative;
-}
+}*/
 #content div.swiper-container img{
     width:100%;
+    border-radius: 50%;
+    height:200px;
+    width:200px;
 }
-#content div.swiper-container .swiper-slide .img-cover{
+/*#content div.swiper-container .swiper-slide .img-cover{
     background-color: rgba(1,1,1,0.5);
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 100;
-}
+}*/
 #content div.swiper-container .subject{
-    background-color: rgba(255,255,255,0.8);
-    box-shadow: 1px 2px gray;
+    /*background-color: rgba(255,255,255,0.8);*/
+    color: white;
+    /*box-shadow: 1px 2px gray;*/
     margin: 0 auto;
-    margin-top: -30px;
+    margin-top: 0px;
     width:80%;
     height:60px;
     line-height: 60px;
@@ -217,7 +222,8 @@ body {
 }
 
 #content-second{
-    background-image: url("public/TOASH0I9A3698_TP_V.jpg");
+    background-image: url("public/nishiguchi.jpg");
+    background-size: cover;
     width: 100%;
 }
 
@@ -252,7 +258,7 @@ body {
 
 #content-second div.link-box{
     padding:100px 0;
-    background: linear-gradient(180deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5),rgba(255,255,255,0.1));
+    background: linear-gradient(180deg,rgba(1,1,1,0.1),rgba(255,255,255,0.5),rgba(1,1,1,0.1));
 
 }
 #content-second div.link-wrap{
