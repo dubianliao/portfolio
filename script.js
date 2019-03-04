@@ -38,6 +38,16 @@ $(function(){
 });//全体の閉じタグ
 
 
+//$(window).on('scroll',function(){
+//    var scrollDis = $(window).scrollTop();
+//    var scrollElm = $('#content-second').offset().top();
+//    var vh = $(window).height();
+//    var target = $('#content-second');
+//    if(scrollDis > scrollElm - vh + (vh / 2)){
+//        target.fadeIn();
+//    }    
+//});
+
 
 //swiper plug in
 var mySwiper = new Swiper ('.swiper-container', {
@@ -65,6 +75,7 @@ $(document).ready(function(){
   var wh = $( window ).height();
   var traX, traY;
   $(document).mousemove(function(e){
+    $('.title').animate({opacity:'1.0'},2000);
     mouseX = e.pageX;
     mouseY = e.pageY;
     traX = ((4 * mouseX) / 300) + 40;

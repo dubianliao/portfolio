@@ -63,6 +63,7 @@ body {
     /*background: url("public/aizome2.png") repeat;*/
     background: url("public/sunrise-1756274_1920.jpg") repeat;
     background-position: 40% 100%;
+    opacity: 0.0;
     -webkit-background-clip: text;
     position: relative;
     text-align: center;
@@ -222,14 +223,12 @@ body {
 
 #content-second h2 {
     padding-top: 120px;
-    padding-bottom: 100px;
     font-family: 'Audiowide', cursive;
     font-weight: 400;
-    color: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.8);
     font-size: 100px;
     /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
-    background: url("public/TOASH0I9A3698_TP_V.jpg") repeat;
-    -webkit-background-clip: text;
+    background: rgba(1,1,1,0.1);
     background-position: top;
     position: relative;
     text-align: center;
@@ -241,11 +240,14 @@ body {
     font-size: 20px;
     font-weight: 800;
     text-align: center;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.8);
     text-shadow: 1px 2px 2px rgba(1,1,1,0.3);
+    padding-top:100px;
     padding-bottom: 100px;
     transition: all 0.6s ease-in-out;
     font-family: 'Noto Sans JP', sans-serif;
+    background: linear-gradient(180deg,rgba(1,1,1,0.1),rgba(1,1,1,0.5),rgba(1,1,1,0.1));
+
 }
 
 #content-second div.link-box{
@@ -268,10 +270,10 @@ body {
     border:solid rgba(1,1,1,0.5) 2px;
     text-align: center;
     line-height: 60px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
 #content-second div.link:hover{
-    color:rgba(255,255,255,0.9);
-    border:solid rgba(255,255,255,0.8) 0px;
+    color:rgba(255,255,255,1);
+    border:solid rgba(255,255,255,0.0) 2px;
 }
