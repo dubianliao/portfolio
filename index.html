@@ -14,18 +14,22 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
 
-    <!-- フ ォ ン ト フ ァ ミ リ ー -->
+    <!-- フ ォ ン ト フ ァ ミ リ ー こ こ か ら -->
 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 
-    <!-- フ ォ ン ト フ ァ ミ リー -->
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <!-- フ ォ ン ト フ ァ ミ リー こ こ ま で-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- j Q U e r y 本 体 こ こ か ら　-->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- j Q U e r y 本 体 こ こ ま で　-->
+    <script type="text/javascript" src="./jquery.arctext.js">
+    </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
 
@@ -44,7 +48,7 @@
                 </div>
             </div>
 
-            <p>SINCE 2016 MIZONOKUCHI</p>
+            <p id="sent">SINCE 2016 MIZONOKUCHI</p>
             <div class="circle-wrap">
                 <div class="circle">
                     <p>DYEING<br>
@@ -91,81 +95,37 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
+
                 <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <div class="img-cover"></div>
-                        <img src ="public/yukipc.jpg">
-                    </div>
-                    <div class="subject">
-                        <p>YUKI YOSHIDA</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <div class="img-cover"></div>
-                        <img src ="public/kuromatsuyapc.jpg">
-                    </div>
-                    <div class="subject">
-                        <p>KUROMATSUYA 1</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <div class="img-cover"></div>
-                        <img src ="public/kuromatsuyasp.jpg">
-                    </div>
-                    <div class="subject">
-                        <p>KUROMATSUYA 2</p>
-                    </div>
+                    <div class="img-cover"></div>
+                    <img src ="public/yukipc.jpg">
+                    <p class="subject">YUKI YOSHIDA</p>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <div class="img-cover"></div>
-                        <img src ="public/isarapc.jpg">
-                    </div>
-                    <div class="subject">
-                        <p>iSara -mosha1-</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <div class="img-cover"></div>
-                        <img src ="public/isarasp.jpg">
-                    </div>
-                    <div class="subject">
-                        <p>iSara -mosha2-</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <div class="img-cover"></div>
-                        <img src ="public/yukipc.jpg">
-                    </div>
-                    <div class="subject">
-                        <p>YUKI YOSHIDA</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <div class="img-cover"></div>
-                        <img src ="public/kuromatsuyapc.jpg">
-                    </div>
-                    <div class="subject">
-                        <p>黒松屋 1</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <div class="img-cover"></div>
-                        <img src ="public/kuromatsuyasp.jpg">
-                    </div>
-                    <div class="subject">
-                        <p>黒松屋 2</p>
-                    </div>
+                    <div class="img-cover"></div>
+                    <img src ="public/kuromatsuyapc.jpg">
+                    <p class="subject">KUROMATSUYA PC</p>
                 </div>
 
-                ...
+                <div class="swiper-slide">
+                    <div class="img-cover"></div>
+                    <img src ="public/kuromatsuyasp.jpg">
+                    <p class="subject">KUROMATSUYA SP</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="img-cover"></div>
+                    <img src ="public/isarapc.jpg">
+                    <p class="subject">ISARA PC (Replica)</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="img-cover"></div>
+                    <img src ="public/isarasp.jpg">
+                    <p class="subject">ISARA SP (Replica)</p>
+                </div>
+
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -194,8 +154,17 @@
     </div>
 
     <div id="footer"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
     <script src="script.js"></script>
+
+    <script type="text/javascript">
+
+      $('#sent').arctext({radius:100});
+      $('.subject').arctext({radius:120,dir: -1});
+    </script>
+
 </body>
 
 </html>

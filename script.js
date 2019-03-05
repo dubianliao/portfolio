@@ -35,7 +35,9 @@ $(function(){
 
 
 
+
 });//全体の閉じタグ
+
 
 
 //$(window).on('scroll',function(){

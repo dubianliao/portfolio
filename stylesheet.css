@@ -62,6 +62,7 @@ body {
     font-size: 180px;
     /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
     background: url("public/shizu2.jpg") repeat;
+    background-repeat: no-repeat;
     /*background: url("public/sunrise-1756274_1920.jpg") repeat;*/
     background-position: 40% 100%;
     opacity: 0.0;
@@ -172,7 +173,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 #content div.swiper-container .swiper-wrapper{
-    height:400px;
+    /*height:400px;*/
 }
 #content div.swiper-container .swiper-slide{
     text-align: center;
@@ -191,38 +192,20 @@ body {
     height:200px;
     cursor: pointer;
 }
-/*#content div.swiper-container .img-wrap{
-    overflow: hidden;
-    position: relative;
-}*/
+
 #content div.swiper-container img{
-    width:100%;
+    /*width:100%;*/
     border-radius: 50%;
     height:200px;
     width:200px;
 }
-/*#content div.swiper-container .swiper-slide .img-cover{
-    background-color: rgba(1,1,1,0.5);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}*/
-#content div.swiper-container .subject{
-    /*background-color: rgba(255,255,255,0.8);*/
+
+#content div.swiper-container p.subject{
     color: white;
-    /*box-shadow: 1px 2px gray;*/
-    margin: 0 auto;
-    margin-top: 0px;
-    width:80%;
-    height:60px;
-    line-height: 60px;
-    z-index: 100;
-    position: relative;
 }
 
 #content-second{
-    background-image: url("public/nishiguchi.jpg");
+    background-image: url("public/nishiguchi2.jpg");
     background-size: cover;
     width: 100%;
 }
@@ -231,7 +214,7 @@ body {
     padding-top: 120px;
     font-family: 'Audiowide', cursive;
     font-weight: 400;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.6);
     font-size: 100px;
     /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
     background: rgba(1,1,1,0.1);
