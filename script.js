@@ -63,8 +63,9 @@ var mySwiper = new Swiper ('.swiper-container', {
 
     breakpoints: {
         1000: {
-            slidesPerView: 3,
-            spaceBetween: 0
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: '.swiper-pagination',
         }
     }
 })
@@ -72,6 +73,9 @@ var mySwiper = new Swiper ('.swiper-container', {
 //top logo background imge
 
 $(document).ready(function(){
+    var windowWidth = $(window).width();
+    var setVw = 1000;
+    if(windowWidth >= setVw){
   var mouseX, mouseY;
   var ww = $( window ).width();
   var wh = $( window ).height();
@@ -85,5 +89,9 @@ $(document).ready(function(){
     console.log(traX);
     $(".title").css({"background-position": traX + "%" + traY + "%"});
   });
+}else{
+
+}
+
 });
 

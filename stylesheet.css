@@ -199,6 +199,13 @@ body {
     height:200px;
     width:200px;
 }
+#content div.swiper-container img:hover{
+    animation: spin 12s linear infinite;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
 
 #content div.swiper-container p.subject{
     color: white;
