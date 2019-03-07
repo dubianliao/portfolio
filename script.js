@@ -26,14 +26,12 @@ $(function(){
         $(this).animate({'paddingLeft':'10px'},300);
         $(this).find('.righticon').
         animate({'paddingLeft':'10px'},300);
-    },
-    function(){
+        },
+        function(){
         $(this).animate({'paddingLeft':''},300);
         $(this).find('.righticon').
         animate({'paddingLeft':''},300);
     });
-
-
 
 
 });//全体の閉じタグ
@@ -60,7 +58,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     //pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-
+    speed:600,
     breakpoints: {
         1000: {
             slidesPerView: 1,
