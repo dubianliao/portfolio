@@ -38,13 +38,24 @@ body {
     100%{background-position:0% 50%}
 }
 
+#content div.back-btn-wrap{
+    position: fixed;
+    top:20px;
+    right: 30px;
+}
 #content div.back-btn{
-    position: sticky;
     top:20px;
     cursor: pointer;
     width: 100px;
     text-align: center;
-    position: : fixed;
+    text-shadow: 1px 1px 1px rgba(1,1,1,0.5);
+}
+#content div.back-btn:hover{
+    animation: spin 2s ease infinite;   
+}
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
 
 #content div.back-btntop{
@@ -61,246 +72,73 @@ body {
     transform: rotateZ(180deg);
 }
 
-#content h1{
-}
-
-#content div.top{
-    text-align: center;
-    color:white;
-}
-#content div.top p{
-    font-size:12px;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-/*====*/
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
-
-
-.container {
-}
-
-.title {
-    padding-top: 100px;
-    padding-bottom: 60px;
-    font-family: 'Permanent Marker', cursive;
-    font-weight: 800;
-    color: transparent;
-    font-size: 180px;
-    /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
-    background: url("../public/shizu2.jpg") repeat;
-    background-repeat: no-repeat;
-    /*background: url("public/sunrise-1756274_1920.jpg") repeat;*/
-    background-position: 40% 100%;
-    opacity: 0.0;
-    -webkit-background-clip: text;
-    position: relative;
-    text-align: center;
-    line-height: 120px;
-    letter-spacing: -10px;
-    box-sizing: border-box;
-}
-.title span{
-}
-
-/*====*/
-
-#content div.top .circle-wrap{
-    margin:0 auto;
-    width:40%;
-    padding:40px 0 40px 0;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-#content div.top .circle-wrap .circle{
-    display: inline-block;
-    border:solid 1px white;
-    border-radius: 50%;
-    height:100px;
-    width:100px;
-    vertical-align: top;
-    margin: 0 10px;
-    position: relative;
-}
-
-
-#content div.top .circle-wrap .circle{
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-#content div.top .circle-wrap .circle:hover {
-    /*color:white;
-    background-color: #FF1361;*/
-    transform: translateY(10px);
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-
-
-#content div.top .circle-wrap .circle p{
-    padding-top: 20px;
-    font-size: 10px;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-#content div.top .circle-wrap .circle p.third-circle{
-    padding-top: 25px;
-}
-#content div.top p.contact-link{
-    padding-top:30px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-#content div.works{
-    display: block;
-    text-align: left;
-    padding:50px 0 20px 100px;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-#content div.works h2{
-    padding-bottom:20px;
-}
-#content div.works.select{
-}
-#content div.works .select .btn{
-    display: inline-block;
-    border:solid 1px white;
-    border-radius: 50%;
-    height:50px;
-    width:50px;
-    line-height: 50px;
-    text-align: center;
-    float: left;
-
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-#content div.works .select .next:hover{
-    transform: translateX(10px);
-}
-#content div.works .select .prev:hover{
-    transform: translateX(-10px);
-}
-#content div.works .select .next{
-    margin-left: 10px;
-}
-
-#content div.swiper-container{
-    margin-top:80px;
-    width:100%;
-    height:400px;
-    box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-#content div.swiper-container .swiper-wrapper{
-    /*height:400px;*/
-}
-#content div.swiper-container .swiper-slide{
-    text-align: center;
-}
-#content div.swiper-container .swiper-slide:nth-child(odd){
-    padding-top: 60px;
-}
-#content div.swiper-container .swiper-button-prev{
-    display: none;
-}
-#content div.swiper-container .swiper-button-next{
-    display: none;
-}
-#content div.swiper-container .img-wrap{
-    margin: 0 auto;
-    height:200px;
-    cursor: pointer;
-}
-
-#content div.swiper-container img{
-    /*width:100%;*/
-    border-radius: 50%;
-    height:210px;
-    width:210px;
-    box-sizing: border-box;
-    border:solid 10px rgba(255,255,255,0);
-}
-
-#content div.swiper-container img:hover{
-    animation: border 1.5s linear infinite;*/
-    /*border:solid 20px rgba(255,255,255,0.5);*/
-}
-@keyframes border {
-    0% {border:solid 10px rgba(255,255,255,0.7);}
-    100% {border:solid 10px rgba(255,255,255,0.2);}
-}
-
-#content div.swiper-container p.subject{
-    color: white;
-    margin-top: -10px;
-}
-
-
-#content-second{
-    background-image: url("../public/nishiguchi2.jpg");
-    background-size: cover;
-    width: 100%;
-}
-
-#content-second h2 {
-    padding-top: 120px;
-    font-family: 'Audiowide', cursive;
-    font-weight: 400;
-    color: rgba(1,1,1,0.6);
-    font-size: 100px;
-    /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
-    background: rgba(255,255,255,0.3);
-    background-position: top;
-    position: relative;
-    text-align: center;
-    line-height: 60px;
-    letter-spacing: -8px;
-    box-sizing: border-box;
-}
-#content-second p {
-    font-size: 20px;
-    font-weight: 800;
-    text-align: center;
-    color: rgba(1,1,1,0.8);
-    text-shadow: 2px 2px 2px rgba(255,255,255,0.3);
-    padding-top:150px;
-    padding-bottom: 60px;
-    transition: all 0.6s ease-in-out;
-    font-family: 'Noto Sans JP', sans-serif;
-    background: rgba(255,255,255,0.3);
-}
-
-#content-second div.link-box{
-    padding:100px 0;
-    background: rgba(255,255,255,0.3);
-}
-#content-second div.link-wrap{
+#content div.top-wrap{
     display: table;
-    margin: 0 auto;
-    color: rgba(1,1,1,0.5);
-    font-size: 40px;
-    border-spacing: 20px 0;
+    width: 100%;
+    padding-top: 100px;
+    height:400px;
 }
-#content-second div.link{
+#content div.top-wrap .top-left{
+    width: 50%;
     display: table-cell;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border:solid rgba(1,1,1,0.5) 2px;
-    text-align: center;
-    line-height: 60px;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
 }
-#content-second div.link:hover{
-    color:rgba(255,255,255,1);
-    border:solid rgba(255,255,255,0.0) 2px;
+#content div.top-wrap .top-left .circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: white;
+    line-height: 400px;
+    text-align: center;
+    margin:0 auto;
+
+}
+#content div.top-wrap .top-left .circle h1{
+    font-size: 50px;
+    color: #6BB1A2;
+    font-weight: bold;
+}
+
+#content div.top-wrap .top-right{
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 100px;
+    color: white;
+}
+
+#content div.top-wrap .top-right .border-top{
+    width:90%;
+    border-bottom:2px white solid;
+    margin-bottom: 10px;
+}
+#content div.top-wrap .top-right h2{
+    width: 90%;
+    padding-bottom: 10px;
+}
+#content div.top-wrap .top-right p{
+    width: 90%;
+}
+#content div.top-wrap .top-right .border-bottom{
+    width:90%;
+    border-top:2px white solid;
+    margin-top: 10px;
+}
+
+#content div.bottom-wrap{
+
+}
+#content div.bottom-wrap p{
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    height: 100px;
+    font-size: 20px;
+}
+#content div.bottom-wrap .img-wrap{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#content div.img-wrap img{
+    width: 85%;
 }

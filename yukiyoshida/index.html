@@ -39,9 +39,11 @@
     <div id="header"></div>
 
     <div id="content">
-        <div class="back-btn">
-            <div class="back-btntop">BACK TO HOME</div>
-            <div class="back-btnbottom">BACK TO HOME</div>
+        <div class="back-btn-wrap">
+            <div class="back-btn">
+                <div class="back-btntop">BACK TO HOME</div>
+                <div class="back-btnbottom">BACK TO HOME</div>
+            </div>
         </div>
         <div class="top-wrap">
            <div class="top-left">
@@ -52,22 +54,21 @@
            <div class="top-right">
                <div class="border-top"></div>
                <h2>YUKI YOSHIDA</h2>
-               <p>12345678</p>
+               <p>
+                  陶芸家の YUKI YOSHIDA 様のポートフォリオサイトを作成しました。<br>
+                  作品集では画像を大きく高さを合わせずに配置して、
+                  「同じものは１つとしてできない」という陶芸への思いを表現しました。大きい物は大きく、小さい物は小さく表現されます。<br>
+                  作品の個性を活かすために全体としてはシンプルなトーンに抑えたつくりとしています。
+               </p>
                <div class="border-bottom"></div>
            </div>
 
         </div>
         <div class="bottom-wrap">
-           <div class="content-name">
-               WEB SITE (Owners Portfolio)
-           </div>
-           <div class="img-pc">
+           <p class="content-name">WEB SITE (Owners Portfolio)</p>
+           <div class="img-wrap">
                <img src="yukiyoshidapc.jpg">
            </div>
-           <div class="img-sp">
-               <img src="">
-           </div>
-
         </div>
     </div>
     <div id="content-second">
@@ -84,6 +85,7 @@
         //$('#sent').arctext({radius:100});
         $('.back-btntop').arctext({radius:10});
         $('.back-btnbottom').arctext({radius:10}); 
+
     </script>
 
 </body>

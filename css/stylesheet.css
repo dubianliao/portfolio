@@ -209,6 +209,7 @@ body {
     width:210px;
     box-sizing: border-box;
     border:solid 10px rgba(255,255,255,0);
+    cursor: pointer;
 }
 
 #content div.swiper-container img:hover{
