@@ -130,6 +130,10 @@ body {
     padding-top: 20px;
     font-size: 10px;
     font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+#content div.top .circle-wrap .circle a{
+    text-decoration: none;
 }
 #content div.top .circle-wrap .circle p.third-circle{
     padding-top: 25px;
@@ -138,6 +142,7 @@ body {
     padding-top:30px;
     display: inline-block;
     cursor: pointer;
+    color: white;
 }
 
 #content div.works{
@@ -282,6 +287,9 @@ body {
     line-height: 60px;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+}
+#content-second div.link a{
+    color: transparent;
 }
 #content-second div.link:hover{
     color:rgba(255,255,255,1);

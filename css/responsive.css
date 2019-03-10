@@ -68,7 +68,7 @@ span.br::before{
     color: transparent;
     font-size: 60px;
     /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
-    background: url("public/shizu2.jpg") repeat;
+    background: url("../public/shizu2.jpg") repeat;
     background-repeat: no-repeat;
     /*background: url("public/sunrise-1756274_1920.jpg") repeat;*/
     background-position: 40% 100%;
@@ -142,6 +142,7 @@ span.br::before{
     padding-top:30px;
     display: inline-block;
     cursor: pointer;
+    color: white;
 }
 
 #content div.works{
@@ -203,7 +204,7 @@ span.br::before{
 }
 
 #content-second{
-    background-image: url("public/nishiguchi2.jpg");
+    background-image: url("../public/nishiguchi2.jpg");
     background-size: cover;
     width: 100%;
     overflow: hidden;

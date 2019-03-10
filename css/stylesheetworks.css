@@ -41,7 +41,7 @@ body {
 #content div.back-btn-wrap{
     position: fixed;
     top:20px;
-    right: 80px;
+    right: 120px;
 }
 #content div.back-btn{
     top:20px;
@@ -101,8 +101,7 @@ body {
 #content div.top-wrap .top-right{
     width: 50%;
     display: table-cell;
-    vertical-align: top;
-    padding-top: 100px;
+    vertical-align: middle;
     color: white;
 }
 
