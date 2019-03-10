@@ -41,7 +41,7 @@ body {
 #content div.back-btn-wrap{
     position: fixed;
     top:20px;
-    right: 30px;
+    right: 80px;
 }
 #content div.back-btn{
     top:20px;
@@ -51,7 +51,7 @@ body {
     text-shadow: 1px 1px 1px rgba(1,1,1,0.5);
 }
 #content div.back-btn:hover{
-    animation: spin 2s ease infinite;   
+    animation: spin 3s ease infinite;   
 }
 @keyframes spin {
     0%{transform: rotate(0deg);}
