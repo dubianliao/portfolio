@@ -9,6 +9,18 @@
 body {
     animation: fadeIn 4s ease 0s 1 normal;
     -webkit-animation: fadeIn 4s ease 0s 1 normal;
+
+    /*background: linear-gradient(-225deg,#FFF800,#44107A,#FFF800);*/
+    background: linear-gradient(-225deg,#FFF800,#7cc68e,#4e8ec6);
+    background-size: 600% 600%;
+    animation: AnimationName 20s ease infinite;
+
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 @keyframes fadeIn {
@@ -25,18 +37,21 @@ body {
 
 /*============= C O N T E N T ================*/
 
-#content{
+/*#content{
     /*background: linear-gradient(-225deg,#FFF800,#44107A,#FFF800);*/
-    background: linear-gradient(-225deg,#FFF800,#7cc68e,#4e8ec6);
+/*    background: linear-gradient(-225deg,#FFF800,#7cc68e,#4e8ec6);
     background-size: 600% 600%;
     animation: AnimationName 20s ease infinite;
 }
  
+
+
 @keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+*/
 
 
 #content div.back-btn{
@@ -236,6 +251,25 @@ body {
     background-image: url("../public/nishiguchi2.jpg");
     background-size: cover;
     width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+    position: relative;
+    z-index: 0;
+}
+
+#content-second::after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba(255,255,255,0.3);
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 #content-second h2 {
@@ -245,7 +279,7 @@ body {
     color: rgba(1,1,1,0.6);
     font-size: 100px;
     /*background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;*/
-    background: rgba(255,255,255,0.3);
+    /*background: rgba(255,255,255,0.3);*/
     background-position: top;
     position: relative;
     text-align: center;
@@ -259,16 +293,16 @@ body {
     text-align: center;
     color: rgba(1,1,1,0.8);
     text-shadow: 2px 2px 2px rgba(255,255,255,0.3);
-    padding-top:150px;
+    padding-top:180px;
     padding-bottom: 60px;
     transition: all 0.6s ease-in-out;
     font-family: 'Noto Sans JP', sans-serif;
-    background: rgba(255,255,255,0.3);
+    /*background: rgba(255,255,255,0.3);*/
 }
 
 #content-second div.link-box{
     padding:100px 0;
-    background: rgba(255,255,255,0.3);
+    /*background: rgba(255,255,255,0.3);*/
 }
 #content-second div.link-wrap{
     display: table;
@@ -288,10 +322,13 @@ body {
     transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
-#content-second div.link a{
-    color: transparent;
+#content-second div.link .fab{
+    color: rgba(1,1,1,0.5);
 }
+
 #content-second div.link:hover{
     color:rgba(255,255,255,1);
     border:solid rgba(255,255,255,0.0) 2px;
+}
+
 }
